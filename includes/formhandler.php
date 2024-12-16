@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = htmlspecialchars($_POST["subject"]);
     $favoriteCar = htmlspecialchars($_POST["favoriteCar"]);
 
-
+    
     if (empty($name)) {
         exit();
         header("Location: ../index.php");
